@@ -26,6 +26,10 @@ public class Wallet {
     private WalletType walletType;
 
 
+    public boolean isTransferAllowerForWalletType(){
+        return this.walletType.equals(WalletType.ENUM.USER.get());
+    }
+
 
     public Wallet(String fullName, String cpfCnpj, String email, String password, WalletType walletType) {
         this.fullName = fullName;
@@ -33,5 +37,17 @@ public class Wallet {
         this.email = email;
         this.password = password;
         this.walletType = walletType;
+    }
+
+    public boolean isBalanceEqualOrGreatherThan(BigDecimal value) {
+        return this.balance.doubleValue() >= value.doubleValue(); // comparação de dois valores
+    }
+
+    public void debit(BigDecimal value) {
+        this.balance = this.balance.subtract(value);
+    }
+
+    public void credit(BigDecimal value) {
+        this.balance = this.balance.add(value);
     }
 }
