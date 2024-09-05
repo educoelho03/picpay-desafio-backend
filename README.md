@@ -7,6 +7,7 @@
   Desafio Backend do PicPay
 </h3>
 
+
 <p align="center">
 
   <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-%2304D361">
@@ -25,5 +26,7 @@
 * Spring Cloud Open Feign
 * ControllerAdvice & Problem Details
 * Hibernate Validator
+
+- [Enunciado do desafio Backend-PicPay](https://github.com/PicPay/picpay-desafio-backend)
 
 :mag: Baixe o projeto e teste você mesmo na prática.
